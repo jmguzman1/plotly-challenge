@@ -74,7 +74,7 @@ function buildCharts(sample) {
     Plotly.newPlot("bar", barChart, barLayout);
   });
 }
-
+// Display the sample metadata, i.e., an individual's demographic information.
 function getMetaData(metaID){
   d3.json("samples.json").then((importedData) => {
       var data = importedData;
